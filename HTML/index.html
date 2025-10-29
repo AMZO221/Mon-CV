@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!-- FontAwesome Icon -->
+  <script src="https://kit.fontawesome.com/a1b4c799d5.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Mon CSS -->
+  <link rel="stylesheet" href="../CSS/style.css">
+  <title>Mon Portfolio</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler bg-white " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav flex justify-content-center w-100 fs-5">
+            <div class="w-25 bg-primary text-center rounded nav-containt " id="home-nav">
+              <a class="nav-link text-white"  href="#home-section">Accueil</a>
+            </div>
+            <div class="w-25  text-center  rounded nav-containt" id="about-nav">
+              <a class="nav-link text-white" href="#about">A Propos</a>
+            </div>
+            <div class="w-25 text-center rounded nav-containt" id="competences-nav">
+              <a class="nav-link text-white" href="#competences">Competences</a>
+            </div>
+            <div class="w-25 text-center rounded nav-containt" id="projects-nav">
+              <a class="nav-link text-white " href="#projects">Projets</a>
+            </div>
+            <div class="w-25  text-center rounded nav-containt" id="contact-nav">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
+  <main>
+    <section id="home-section" class="home-section">
+      <div class="hero" id="home">
+        <div class="image-container">
+            <div class="image-card">
+                <img class="profile" src="../ASSETS/IMAGES/me_4.jpg" alt="profile">
+            </div>
+        </div>
+        <div class="hero-content">
+            <h3>Salut 👋! Je suis</h3>
+            <h1>AMACODOU NDIAYE</h1>
+            <h4>Etudiant en informatique</h4>
+            <p>Passionné par la création de solutions digitales innovantes et performantes.</p>
+            <div>
+              <button style="padding: 20px;" class="boutton">
+                <a href="../ASSETS/DOCUMENTS/Amacodou_Ndiaye_CV.pdf" download="Amacodou_Ndiaye_CV.pdf" style="color:white; text-decoration:none; width:100%; height:100%;">
+                  <i class="fa-solid fa-download text-white"></i> Télécharger mon CV
+                </a>
+              </button>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about-section">
+      <h2>À propos de moi</h2>
+      <p>Etudiant en 2eme annee d'informatique, passionné par la création de solutions digitales, je conçois des applications web (Django, MySQL, React.js) et mobiles (Flutter) modernes. Curieux et orienté solutions, je m’investis dans la réalisation de projets performants, sécurisés et centrés sur l’utilisateur, avec l’ambition de repousser mes limites et de contribuer à des projets innovants et à fort impact.</p>
+    </section>
+    <section id="competences" class="competences-section">
+      <h2>Mes Compétences</h2>
+      <div class="competences-grid">
+        <div class="competences-card">
+            <div class="logos">
+                <img src="../ASSETS/IMAGES/logo_langage.png" alt="">
+            </div>
+          <h3>Langages</h3>
+          <p><i class="fa-brands fa-python"></i> Python </p>
+          <p><i class="bi bi-javascript"></i>  JavaScript </p>
+          <p><i class="fa-solid fa-database"></i>  SQL</p>
+          <p><i class="bi bi-c-square-fill"></i>  C</p>
+          <p><i class="fa-brands fa-dart-lang"></i>  Dart</p>
+          <p><i class="bi bi-code-slash"></i>  HTML / CSS</p>
+        </div>
+        <div class="competences-card">
+            <div class="logos">
+                <img src="../ASSETS/IMAGES/logo_framework.png" alt="">
+            </div>
+          <h3>Framworks & Outils</h3>
+          <p> <svg width="20" version="1.0" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" fill="#092e20"><path d="M59.448 0h20.93v96.88c-10.737 2.04-18.62 2.855-27.181 2.855-25.551-.001-38.87-11.551-38.87-33.705 0-21.338 14.135-35.2 36.015-35.2 3.398 0 5.98.272 9.106 1.087zm0 48.765c-2.446-.815-4.485-1.086-7.067-1.086-10.6 0-16.717 6.523-16.717 17.939 0 11.145 5.845 17.26 16.582 17.26 2.309 0 4.212-.136 7.202-.542z"/><path d="M113.672 32.321V80.84c0 16.717-1.224 24.735-4.893 31.666-3.398 6.661-7.883 10.873-17.124 15.494l-19.435-9.241c9.242-4.35 13.726-8.153 16.58-14 2.99-5.979 3.943-12.91 3.943-31.122V32.321zM92.742.111h20.93v21.474h-20.93z"/></svg>
+  Django</p>
+          <p><i class="fa-brands fa-flutter"></i>  Flutter</p>
+          <p>Django REST Framework</p>
+          <p><i class="fa-brands fa-react"></i>  React.js</p>
+          <p>Tailwind CSS</p>
+          <p><i class="bi bi-bootstrap-fill"></i>  Bootstrap</p>
+        </div>
+        <div class="competences-card">
+            <div class="logos">
+                <img src="../ASSETS/IMAGES/logo_bdd.png" alt="">
+            </div>
+          <h3>Bases de donnees</h3>
+            <p>MySQL</p>
+            <p>SQLITE3</p>
+            <p>Hive (NoSQL pour mobile)</p>
+        </div>
+        <div class="competences-card">
+            <div class="logos">
+                <img src="../ASSETS/IMAGES/logo_techno.png" alt="">
+            </div>
+          <h3>Autres Outils</h3>
+          <p><i class="bi bi-github"></i>  Git / GitHub</p>
+          <p><i class="bi bi-tux"></i>  Linux</p>
+          <p><i class="bi bi-broadcast"></i>  Reseaux (bases)</p>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects-section">
+      <h2>Mes Projets</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="video">
+            <video src="../ASSETS/VIDEOS/neootaku_demo.mp4" preload="true" autoplay="true" height="200" width="100%"  controls>demo application Zikr Plus</video>
+           </div>
+          <h3>NeoOtaku</h3>
+          <p>NeoOtaku est une plateforme web destinée aux passionnés d’anime. Elle propose des fiches d’informations, des liens de visionnage et une section communauté avec possibilité de publier du contenu (texte, image, vidéo) soumis à modération.<br> La plateforme est realise avec Django (backend) , Html /Css/JS/Bootstrap (frontend) et SQLITE3 (base de donnees)</p>
+          <a href="https://neootaku.pythonanywhere.com/" style="margin-bottom:10px;"><i class="bi bi-link-45deg"></i> lien vers le mvp</a>
+        </div>
+        <div class="project-card">
+          <div class="video">
+            <video src="../ASSETS/VIDEOS/flashcard_demo.mp4" preload="true" autoplay="true" height="200" width="100%"  controls>demo application FlashCard</video>
+           </div>
+          <h3>FlashCard</h3>
+          <p>FlashCard est une application web interactive et responsive qui facilite l’apprentissage grâce à des cartes de révision dynamiques.
+Développée avec React, Vite, Tailwind CSS et DaisyUI, elle offre une expérience fluide et intuitive pour créer, réviser et tester ses connaissances de manière ludique.</p>
+          <a href="https://flashcard-l2v6.onrender.com/" style="margin-bottom:10px;"><i class="bi bi-link-45deg"></i> lien vers le site</a>
+        </div>
+        <div class="project-card">
+           <div class="video">
+            <video src="../ASSETS/VIDEOS/zikrplus_demo.mp4" preload="true" height="200" width="100%"  controls>demo application Zikr Plus</video>
+           </div>
+          <h3>Zikr Plus</h3>
+          <p>Zikr Plus est une a                    pplication mobile de zikr realiser avec Flutter et Hive pour le stockage local.L'application permet de compter et de gerer facilement son historique de zikr. ZikrPlus sera bientot disponible dans les stores.</p>
+        </div>
+        
+      </div>
+      <p class="autre-projets" >Decouvrez mes autres projets sur mon GitHub</p>
+      <a href="https://github.com/AMZO221"><i class="bi bi-link-45deg"></i>  Lien vers mon github<img src="../ASSETS/IMAGES/logo_github.png" alt="github" width="20" height="20" style="margin-left: 5px;"></a>
+    </section>
+    <section id="contact" class="contact-section">
+      <h2>Contactez-moi</h2>
+      <p style="text-align: center;">Rejoignez moi via</p>
+      <div class="lien-site" >
+        <ul style="display: inline-flex; gap: 20px; list-style: none; padding: 0; justify-content: center;">
+          <li><a href="mailto:amzondiaye4411@gmail.com"><img src="../ASSETS/IMAGES/logo_gmail.png" alt="gmail" width="50"></a></li>
+          <li><a href="https://github.com/AMZO221"><img src="../ASSETS/IMAGES/logo_github.png" alt="github" width="30"></a></li>
+          <li><a href="https://www.linkedin.com/in/amacodou-ndiaye-5a5797388"><img src="../ASSETS/IMAGES/linkedin.svg" alt="linkedin" width="30"></a></li>
+        </ul>
+      </div>
+      <hr>
+      <p style="text-align: center;">Envoyer moi un message</p>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Nom" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Votre message" required></textarea>
+        <button type="submit" class="boutton">Envoyer  <i class="fa fa-paper-plane-o text-white" aria-hidden="true"></i></button>
+        <div class="form-message text-center"></div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 AmzoDev Tous droits réservés.</p>
+  </footer>
+  <script src="../JS/script.js"></script>
+</body>
+</html>
