@@ -14,18 +14,53 @@ header {
   position: relative;
   overflow: hidden;
 }
+.my-boutton{
+  width: 35px;
+  height: 30px;
+}
+
+.my-boutton span{
+  width: 25px;
+  height: 30px;
+  margin-left: -8px;
+  margin-top: -5px;
+}
+
+.logo-name-container{
+  width: 40%;
+}
+.logo-name{
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+}
+.logo{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.name span{
+  font-size: 18px;
+  font-weight: 500;
+}
 nav{
   display: flex;
   justify-content: center;
   padding: 2rem 0 1rem 0;
   margin: 0;
   background: linear-gradient(120deg, #4f46e5 0%, #38bdf8 100%);
+  
+}
+.liens-navigation a{
+  font-size: 16px;
 }
 
 .bg-primary{
   width: contain;
-
 }
+
 i{
   color: #4f46e5;
 }
@@ -267,6 +302,10 @@ button.boutton:hover {
     gap: 2rem;
     margin-bottom: 1rem;
 }
+.contact-section .lien-site img:hover{
+  transition: transform 0.3s;
+  transform: scale(1.1);
+}
 .form-message {
   min-height: 1.5rem;
   font-size: 1rem;
@@ -285,9 +324,12 @@ body.dark-mode footer {
   color: #facc15;
 }
 @media (max-width: 700px) {
+    .name span{
+      font-size: 30px;
+    }
     .hero{
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
     .hero .image-container{
         margin-left: 0px;
@@ -305,5 +347,7 @@ body.dark-mode footer {
     }
   .hero h1 { font-size: 2rem; }
   .hero p { font-size: 1.1rem; }
-  .about-section, .competences-section,.projects-section, .contact-section { padding: 1rem; }
+  .about-section, .competences-section,.projects-section, .contact-section { 
+    padding: 1rem;
+  }
 }
