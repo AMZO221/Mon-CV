@@ -47,9 +47,22 @@ document.addEventListener('DOMContentLoaded', function () {
   const formMsg = document.querySelector('.form-message');
   form.addEventListener('submit', function (e) {
     e.preventDefault();
+    const nom = form.elements['name'].value;
+    const message = form.elements['message'].value;
+    if(nom.trim()===''){
+      formMsg.style.color = 'red';
+      formMsg.textContent = 'Veuillez entrer votre nom svp';
+      return;
+    }
+    if(message.trim()===''){
+      formMsg.style.color = 'red';
+      formMsg.textContent = 'Veuillez entrer votre message svp';
+      return;
+    }
+    formMsg.style.color = "blue";
     formMsg.textContent = 'Envoi en cours...';
     setTimeout(() => {
-      formMsg.textContent = `Merci pour votre message ! ${form.elements['name'].value}`;
+      formMsg.textContent = `Merci pour votre message ! ${nom}`;
       form.reset();
     }, 1200);
 
