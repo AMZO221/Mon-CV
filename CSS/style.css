@@ -134,7 +134,11 @@ i{
     color: #facc15;
     cursor: pointer;
 }
-
+.hero-button-container{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
 
 @keyframes fadeInDown {
   from { opacity: 0; transform: translateY(-40px); }
