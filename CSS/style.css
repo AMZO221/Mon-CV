@@ -89,12 +89,12 @@ i{
     border-radius: 100%;
     box-shadow: 0 4px 24px #4f46e510;
     background-color: white;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     transition: transform 0.3s ease , box-shadow 0.3s ease;
 }
 .hero .image-container .image-card:hover{
     transform: translateY(-10px) scale(1.05 );
-    box-shadow: 0 4px 24px white;
+    /* box-shadow: 0 4px 24px white; */
 }
 .hero .image-container .image-card img.profile{
     width: 400px;
